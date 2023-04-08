@@ -90,6 +90,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className="mt-3 max-w-lg opacity-70">{client.appSummary}</p>
+        <p className="mt-3 max-w-lg opacity-70"><a href="/_newindex">新入口</a></p>
 
         <Card className="p-0 overflow-hidden mt-10 w-full h-36 max-w-lg bg-blue-100/20">
           <textarea
@@ -126,23 +127,6 @@ const Home: NextPage = () => {
           </Card>
         ) : undefined}
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://github.com/noobnooc/ohmygpt"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="opacity-50">Powered by</span>{" "}
-          <span
-            className={classNames(spaceGrotesk.className)}
-            style={{ color: client.appThemeColor }}
-          >
-            OhMyGPT
-          </span>
-        </a>
-      </footer>
     </div>
   );
 };
